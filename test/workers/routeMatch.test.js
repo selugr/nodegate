@@ -29,3 +29,13 @@ describe('workers/routeMatch', () => {
     expect(execute.mock.calls.length).toBe(0);
   });
 });
+
+// test to perform
+// const TYPES = [
+//   'giftcard',
+//   'boxes',
+//   'single-voucher',
+// ];
+
+// const regex = new RegExp(`^.*/(${TYPES.join('|')})/.*$`);
+// http://localhost:3100/purchase/use/boxes/9592bfd4-88c3-459f-992a-80c4d257395e

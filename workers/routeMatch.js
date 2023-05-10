@@ -6,8 +6,9 @@
  */
 
 module.exports = (regex, workflow) => (container, request, execute) => {
-  if (request.route.path.match(regex)) {
+  if (regex.test(request.originalUrl)) {
     return execute(workflow, container, request);
   }
+  // Should we really return the container???
   return container;
 };
